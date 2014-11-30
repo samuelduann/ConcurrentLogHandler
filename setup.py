@@ -213,8 +213,8 @@ doc = __doc__.splitlines()
 
 setup(name='ConcurrentLogHandler',
       version=VERSION,
-      author="Samuel Duann",
-      author_email="adamgic@gmail.com",
+      author="Lowell Alleman",
+      author_email="lowell87@gmail.com",
       py_modules=[
         "cloghandler",
         "portalocker",
