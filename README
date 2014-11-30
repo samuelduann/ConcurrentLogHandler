@@ -26,6 +26,21 @@ Here is a simple usage example:
     
     log.info("Here is a very exciting log message, just for you")
 
+Here is a example for ConcurrentTimedRotatingFileHandler
+
+    from logging import getLogger, INFO
+    from cloghandler import ConcurrentTimedRotatingFileHandler
+    import os
+    
+    log = getLogger()
+    # Use an absolute path to prevent file rotation trouble.
+    logfile = os.path.abspath("mylogfile.log")
+    # Rotate log each hour, with max to 5 backups(NOTICE: delete of backups not implemented yet!)
+    rotateHandler = ConcurrentRotatingFileHandler(logfile, "h", 1, 5)
+    log.addHandler(rotateHandler)
+    log.setLevel(INFO)
+    
+    log.info("Here is a very exciting log message, just for you")
 
 
 To use this module from a logging config file, use a handler entry like this:

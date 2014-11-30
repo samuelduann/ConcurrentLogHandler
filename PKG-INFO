@@ -1,10 +1,10 @@
 Metadata-Version: 1.0
 Name: ConcurrentLogHandler
-Version: 0.8.4
+Version: 0.8.5
 Summary:  Concurrent logging handler (drop-in replacement for RotatingFileHandler)
 Home-page: http://pypi.python.org/pypi/ConcurrentLogHandler
-Author: Lowell Alleman
-Author-email: lowell87@gmail.com
+Author: Lowell Alleman, Samuel Duann
+Author-email: lowell87@gmail.com, adamgic@gmail.com
 License: http://www.apache.org/licenses/LICENSE-2.0
 Description: Overview
         ========
